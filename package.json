@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Basic Discord Bot",
   "main": "bot.js",
+<<<<<<< HEAD
   "author": "Kevin N",
   "dependencies": {
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
@@ -10,3 +11,8 @@
     "winston": "^3.1.0"
   }
 }
+=======
+  "author": "Kevin Nguyen",
+  "dependencies": {}
+}
+>>>>>>> b092f7fe31c7192620b2eb99602a36c34b0e8b78
