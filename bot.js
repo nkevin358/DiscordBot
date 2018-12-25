@@ -24,11 +24,14 @@ client.on('message', (request) => {
         return
     }
 
-    request.channel.send("Message received from " + request.author.toString() + ": " + request.content)
+    if(request.content.includes(client.user.toString())){
+    	 request.channel.send("Message received from " +
+            request.author.toString() + ": " + request.content)
+    }
 })
 
 
-var bot_token = 'NTExNTY4NjEzOTQ2Mjk0Mjcy.Dssy-Q.Y2F8aQHRQ8h1TFhVBE3_o0f2eFw'
+var bot_token = 'NTExNTY4NjEzOTQ2Mjk0Mjcy.DwGdJA.ZIxz8Fmm2FwMn9z-l511tSsuWMs'
 
 client.login(bot_token)
 
