@@ -8,16 +8,22 @@ if(type == "dice"){
 	var min = 1;
 	var max = 6;
 	var dice = Math.floor(Math.random() * (+max - +min)) + min;
-	console.log("dice command working")
+
+	var response = 'Diceroll was ' + dice
 }
 else if (type == "coin"){
 	var min = 1;
 	var max = 2;
 	var dice = Math.floor(Math.random() * (+max - +min)) + min;
-	console.log("coin command working")
+
+	if(dice == 1){
+		var response = "You flipped heads!" 
+	}
+	else{
+		"You flipped tails!"
+	}
 }
 
-
-message.channel.send(dice);
+message.channel.send(response);
 
 };
